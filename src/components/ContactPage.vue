@@ -83,7 +83,7 @@ export default {
         message: this.sanitizeInput(this.form.message),
       };
       try {
-        const response = await fetch("https://your-api-endpoint.com/contact", {
+        const response = await fetch("https://api-ici.com/contact", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

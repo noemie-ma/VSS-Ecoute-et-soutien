@@ -3,7 +3,7 @@
   <header>
     <!-- Logo et navigation avec des ancres -->
     <div class="logo">
-      <img src="./assets/logo.png" alt="Logo du site Pour Elles" />
+      <img src="../assets/logo.png" alt="Logo du site Pour Elles" />
     </div>
     <!--<div class="title">
       <h1>Pour Elles</h1>
