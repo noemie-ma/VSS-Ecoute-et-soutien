@@ -1,0 +1,273 @@
+/* Styles généraux (équivalent d'un reset.css) */ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Titres et paragraphes */
+h1, h3 {
+    color: #ffffff;
+    font-family: "Sunshiney", cursive, sans-serif;
+}
+
+h2 {
+    color : #aa00ff;
+    font-family: "Sunshiney", cursive, sans-serif;
+    font-style: normal;
+    font-size: 25px;
+}
+
+p {
+    color: #000000;
+}
+
+/* Header */
+header {
+    background-color: #aa00ff;
+    color: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-family: "Sunshiney", cursive, sans-serif;
+    font-size: 20px;
+}
+
+.upheader {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+/* Logo du site */
+.logo {
+    align-content: flex-start;
+    flex: 1;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.nom h1 {
+    margin: 0;
+}
+
+nav /* Nav-bar */
+{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 20px;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ecf0f1;
+    border-bottom: 3px solid #FFFFFF;
+    padding-bottom: 10px;
+
+}
+
+/* Contact */
+.contact a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Conteneur principal */
+#container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sections */
+#vss, #vss2, #signaler {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Liste */
+ul {
+    margin-left: 20px;
+}
+
+/* Bouton SOS */
+.bouton-sos {
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bouton-sos:hover {
+    background-color: #e74c3c;
+}
+
+/* Formulaire de contact */
+form {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: "Sunshiney", cursive, sans-serif;
+}
+
+button {
+    background-color: #8b00d1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #aa00ff;
+}
+
+::placeholder {
+    color: #aaa;
+}
+
+/* Footer */
+footer {
+    background-color: #aa00ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright h3 {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .upheader {
+        
+		flex-direction: column;
+		width: 100%;
+	}
+
+    .logo {
+        order: 1;
+    }
+
+    nav {
+        order: 3;
+        flex: 1 0 100%;
+        width: 100%;
+    }
+
+    nav ul
+    {
+        width: 100%;
+        text-align: center;
+        justify-content: space-around;
+        align-items: stretch;
+        border-top: none;
+    }
+
+    nav li {
+        margin-bottom: 17px;
+		margin-top: 2px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a:hover {
+        padding-bottom: 20px;
+    }
+
+    .contact {
+            order: 2;
+            align-self: self-end;
+            padding: 0;
+            margin-bottom: 25px;
+            margin-left: 30px;
+            margin-top: -12px;
+            margin-right: 1px;
+    }
+
+    #container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .logo img {
+        max-width: 80px;
+    }
+
+    nav ul {
+        margin: 5px 0;
+    }
+
+    .bouton-sos {
+        padding: 8px 12px;
+    }
+}
